@@ -21,29 +21,45 @@
         </div>
         <div class="section-two">
             <div class="top">
-                <p>This is just a test! I know that I know nothing. Sign up now to get started. We might even tell you the story of Perseus.</p>
-                <p>You know you want to. We know you want to. So do not hesitate!</p>
+                <div class="top-container">
+                    <p>This is just a test! I know that I know nothing. Sign up <em>now</em> to get started. We might even tell you the story of Perseus.</p>
+                    <p>You <em>know</em> you want to. We <em>know</em> you want to.</p>
+                    <p>So do not hesitate!</p>
+                </div>
             </div>
             <div class="middle">
                 <p>Fill in the details to get started!</p>
                 <form action="example.com/path" method="post">
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" id="firstName" name="firstName">
-                    
-                    <label for="lastName">LAST NAME</label>
-                    <input type="text" id="lastName" name="lastName">
-                   
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
-
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" name="phone">
-
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password">
-
-                    <label for="password-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="password-confirm" name="password-confirm">
+                <div class="firstRow">
+                    <div class="firstName">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="lastName">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                </div>
+                <div class="secondRow">
+                    <div class="email">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="phone">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+                <div class="thirdRow">
+                    <div class="password">
+                        <label for="password">PASSWORD</label>
+                        <input class="error" type="password" id="password" name="password">
+                    </div>
+                    <div class="password-confirm">
+                        <label for="password-confirm">CONFIRM PASSWORD</label>
+                        <input class="error" type="password" id="password-confirm" name="password-confirm">
+                    </div>
+                </div>
                 </form>
             </div>
             <div class="bottom">
