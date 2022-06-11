@@ -1,8 +1,10 @@
-
+//declarations
 const password = document.getElementById("password");
 const passwordConfirm = document.getElementById("password-confirm");
 const message = document.createElement("div");
 const btn = document.getElementById("btn");
+
+//insert and remove nodes
 
 let insertAfter = function(newNode, existingNode){
     existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
@@ -12,6 +14,8 @@ let removeAfter = function(removeNode, existingNode){
     existingNode.parentNode.removeChild(removeNode);
 };
 
+
+//password checking
 let check = function(){
     if (password.value != passwordConfirm.value){
         message.style.color = "red";
@@ -31,6 +35,7 @@ let check = function(){
     }
 };
 
+//something for the button
 btn.addEventListener("click", ()=> {
     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 });
