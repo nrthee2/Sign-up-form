@@ -137,6 +137,12 @@ input:focus {
     box-shadow: 1px 1px 1px grey;
 }
 
+.error {
+    border: none;
+    outline: none;
+    border: 1px solid red;
+}
+
 .firstRow,
 .secondRow,
 .thirdRow {

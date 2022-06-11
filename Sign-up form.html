@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Sign-up form.css">
+    <script src="Sign-up-form.js" defer></script>
     <title>Sign-Up form</title>
 </head>
 <body>
@@ -53,17 +54,17 @@
                 <div class="thirdRow">
                     <div class="password">
                         <label for="password">PASSWORD</label>
-                        <input class="error" type="password" id="password" name="password">
+                        <input type="password" id="password" name="password" onkeyup="check();">
                     </div>
                     <div class="password-confirm">
                         <label for="password-confirm">CONFIRM PASSWORD</label>
-                        <input class="error" type="password" id="password-confirm" name="password-confirm">
+                        <input type="password" id="password-confirm" name="password-confirm" onkeyup="check();">
                     </div>
                 </div>
                 </form>
             </div>
             <div class="bottom">
-                <button>Create Account</button>
+                <button id="btn">Create Account</button>
                 <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</a></p>
             </div>
         </div>
